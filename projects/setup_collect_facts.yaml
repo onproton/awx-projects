@@ -1,5 +1,8 @@
 ---
-- name: check facts
-  tasks:
-  - name: check facts
-    setup:
+  - name: Check-Facts-Playbook
+    hosts: all
+    become: yes
+    become_user: root
+    tasks:
+      - name: check-facts-task
+        setup:
