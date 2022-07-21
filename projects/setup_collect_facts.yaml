@@ -1,3 +1,5 @@
 ---
-  - name: Collect facts
+- name: check facts
+  tasks:
+  - name: check facts
     setup:
